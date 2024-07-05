@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MWC 2024: Qualcomm brings the digital twin network to life!
+title: MWC 2024, Qualcomm brings the digital twin network to life!
 date: 2024-03-01 16:11:00-0400
 inline: false
 related_posts: false
