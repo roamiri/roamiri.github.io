@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Diving into Spatio-Temporal Graph Neural Networks! Fr Vero!!
+Diving into Spatio-Temporal Graph Neural Networks! Fr Vro!!
