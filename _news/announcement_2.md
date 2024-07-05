@@ -12,6 +12,4 @@ After almost a year of work with an amazing team we showcased a digital twin rep
 
 At MWC 2024, we saw this cool mashup of wireless system modeling, computer vision, and AI. Picture this: a digital twin network hanging out with its live physical over-the-air testbed in sunny San Diego. 🌴📡 It’s like the future of connectivity giving high-fives to both network operators and end-users. 🚀🔗
 
-#### My presentation is here!!!!
-
-https://www.youtube.com/watch?v=h9cfOFi5TfQ&t=41s
+#### My presentation is public on YouTube [here](https://www.youtube.com/watch?v=h9cfOFi5TfQ&t=41s)!!!!
