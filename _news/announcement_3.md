@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Check out my recent publication here! https://ieeexplore.ieee.org/abstract/document/10122144. ! :sparkles: :smile:
+Check out my recent publication in IEEE Journal of Selected Areas in Communications [link](https://ieeexplore.ieee.org/abstract/document/10122144). ! :sparkles: :smile:
