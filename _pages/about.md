@@ -16,4 +16,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a researcher at the intersection of wireless communication and artificial intelligence. Currently, I work at the Qualcomm Research Center. :)
+I am a researcher at the intersection of wireless communication and artificial intelligence. Currently, I work at the Qualcomm AI Research Center. :)
