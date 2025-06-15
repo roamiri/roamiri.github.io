@@ -2,7 +2,7 @@
 layout: page
 title: Geometric Large Scale Wireless Network Simulator
 description: with background image
-img: assets/img/12.jpg
+img: assets/img/GeoNS.png
 importance: 1
 category: work
 related_publications: true
