@@ -184,11 +184,14 @@
       padding: 32px;
     }
     .hero-card-avatar {
-      width: 88px; height: 88px; border-radius: 50%;
-      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 2.2rem; margin-bottom: 20px;
-      box-shadow: 0 0 0 4px rgba(79,70,229,.2);
+      width: 96px; height: 96px; border-radius: 50%;
+      overflow: hidden; margin-bottom: 20px;
+      box-shadow: 0 0 0 3px rgba(165,180,252,.25), 0 0 0 6px rgba(79,70,229,.1);
+    }
+    .hero-card-avatar img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center top;
+      display: block;
     }
     .hero-card h3 {
       font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 4px;
@@ -266,6 +269,15 @@
     .about-card {
       background: var(--bg-alt); border: 1px solid var(--border);
       border-radius: var(--radius-lg); padding: 24px; position: sticky; top: 80px;
+    }
+    .about-card-photo {
+      width: 110px; height: 110px; border-radius: 50%;
+      overflow: hidden; margin: 0 auto 20px;
+      box-shadow: 0 0 0 3px var(--border), 0 4px 12px rgba(0,0,0,.08);
+    }
+    .about-card-photo img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center top; display: block;
     }
     .ac-row {
       display: flex; flex-direction: column; gap: 2px;
@@ -560,7 +572,9 @@
       </div>
     </div>
     <div class="hero-card">
-      <div class="hero-card-avatar">🧠</div>
+      <div class="hero-card-avatar">
+        <img src="assets/img/Rooh_professional.jpg" alt="Roohollah Amiri">
+      </div>
       <h3>Roohollah Amiri</h3>
       <div class="hc-role">Staff AI Researcher @ Qualcomm</div>
       <div class="hc-stat-row">
@@ -651,6 +665,9 @@
       </div>
       <div>
         <div class="about-card">
+          <div class="about-card-photo">
+            <img src="assets/img/Rooh_professional.jpg" alt="Roohollah Amiri">
+          </div>
           <div class="ac-row">
             <span class="ac-label">Position</span>
             <span class="ac-value">Staff AI Researcher</span>
