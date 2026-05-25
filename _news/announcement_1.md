@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Diving into Spatio-Temporal Graph Neural Networks! Fr Vro!!
+Diving deep into spatio-temporal graph neural networks for wireless network state prediction — exciting direction for AI-native 6G intelligence.

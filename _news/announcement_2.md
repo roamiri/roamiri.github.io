@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-After almost a year of work with an amazing team we showcased a digital twin replica of a factory environment. The sigital twin contains all the components of a radio access network.
+After almost a year of work with an amazing team we showcased a digital twin replica of a factory environment. The digital twin contains all the components of a radio access network.
 
 ---
 

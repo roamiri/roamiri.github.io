@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  Senior AI Researcher · <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank">Qualcomm AI Research</a> · San Diego, CA
+  AI Efficiency Researcher · <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank">Qualcomm AI Research</a> · San Diego, CA
 
 profile:
   align: right
@@ -18,17 +18,17 @@ selected_papers: true
 social: true
 ---
 
-I am a Senior AI Researcher at **Qualcomm AI Research**, where I work at the intersection of machine learning, wireless communications, and autonomous systems. My research focuses on **model quantization and compression** for efficient on-device AI inference, **AI-native wireless positioning and mapping**, and applying deep learning to next-generation (5G/6G) network intelligence.
+I am a Senior AI Researcher at **Qualcomm AI Research** focused on **AI efficiency** — compressing and quantizing large neural networks so they run fast and accurately on-device, from smartphones to autonomous vehicles. My core work spans **post-training quantization**, **mixed-precision compression**, and making LLMs and vision models viable on mobile SoCs without sacrificing quality.
 
-Prior to joining Qualcomm, I completed my **Ph.D. in Electrical and Computer Engineering** at [Boise State University](https://www.boisestate.edu/), advised by Prof. Hani Mehrpouyan, with research on machine learning for heterogeneous wireless networks and mmWave MIMO systems. I hold a B.Sc. and M.Sc. in Electrical Engineering, with graduate work spanning signal processing, distributed MIMO radar, and statistical estimation theory.
+Before moving to AI Research, I spent four years on Qualcomm's **Wireless R&D** team applying deep learning to 5G/6G problems: building neural RF-SLAM systems for indoor positioning, constructing digital twin networks, and developing AI-native localization pipelines. I hold a **Ph.D. in Electrical and Computer Engineering** from [Boise State University](https://www.boisestate.edu/) (advised by Prof. Hani Mehrpouyan), where I worked on reinforcement learning for self-organizing wireless networks, and was a visiting scholar at the **University of Texas at Austin** collaborating with Prof. Jeffrey Andrews.
 
-My work has been published in top IEEE venues including **IEEE JSAC**, **IEEE Transactions on Wireless Communications**, **GLOBECOM**, and **ICC**. I have been cited over **430 times** and collaborate closely with researchers at leading universities and industry labs.
+My work spans both academia and industry: published in **IEEE JSAC**, **IEEE Transactions on Wireless Communications**, **GLOBECOM**, and **ICC**, with **430+ citations**, and shipped in production AI systems at Qualcomm.
 
 ---
 
 ### Research Interests
 
-- **Efficient AI / Model Quantization** — Mixed-precision quantization and compression of large neural networks for deployment on edge and mobile devices (self-driving vehicles, smartphones, IoT).
-- **AI for Wireless Communications** — Neural network-based positioning, RF-SLAM, indoor localization using 5G channel state information, and digital twin construction for wireless networks.
-- **Machine Learning for Signal Processing** — Deep learning applied to MIMO systems, mmWave communications, distributed radar, and heterogeneous cellular networks.
-- **Self-Driving AI Systems** — AI model optimization and reliability for autonomous driving perception pipelines.
+- **Model Quantization & Compression** — Post-training and quantization-aware training for LLMs and vision models; mixed-precision schemes for edge and mobile SoCs.
+- **On-Device AI Efficiency** — Reducing compute, memory, and energy footprint of neural networks for deployment on smartphones, autonomous vehicles, and IoT devices.
+- **AI-Native Wireless Systems** — Neural RF-SLAM, 5G/6G indoor positioning, digital twin construction, and channel-state-based environment mapping.
+- **Reinforcement Learning for Networks** — Distributed multi-agent RL for power allocation, topology management, and self-organization in heterogeneous cellular networks.

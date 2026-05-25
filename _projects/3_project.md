@@ -1,81 +1,39 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
+title: Neural RF-SLAM & AI-Native Positioning
+description: Simultaneous positioning and mapping from 5G channel state information
 img: assets/img/7.jpg
-redirect: https://unsplash.com
 importance: 3
 category: work
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Neural RF-SLAM and AI-Native Indoor Positioning
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Traditional indoor positioning relies on fingerprinting databases, known maps, or dedicated localization infrastructure. This project explores a different approach: using **5G channel state information (CSI)** as the sole sensing modality to simultaneously estimate a mobile agent's position and build a map of its environment — no GPS, no pre-existing maps, no labeled data required.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### Neural RF-SLAM
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+We introduced **Neural RF-SLAM**, an unsupervised framework for simultaneous radio-frequency positioning and mapping. The system combines:
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+- A **neural implicit representation** of the radio environment, mapping spatial coordinates to expected channel responses
+- A **SLAM-style optimization** loop that jointly refines the agent's trajectory and the learned RF map
+- Training directly from raw 5G CSI measurements, with no ground-truth position labels
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+The result is a system that discovers the geometry of an indoor space purely from the way wireless signals propagate through it.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### AI-Native 5G Indoor Localization
 
-{% raw %}
+Building on RF-SLAM, we developed a supervised localization pipeline with **IMU supervision** that achieves sub-meter accuracy indoors. Key ideas:
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- IMU measurements used as a supervisory signal during training — teaching the network about physical motion constraints without requiring position ground truth
+- At inference, the model estimates position from CSI alone, with no IMU dependency
+- Evaluated in challenging multipath environments at 5G NR Sub-6 GHz frequencies
 
-{% endraw %}
+### Indoor Environment Learning via RF-Mapping
+
+The third line of work learns a **dense environmental representation** (not just a position estimate) from RF measurements. The learned map captures structural features of the environment — walls, openings, material properties — purely from radio propagation effects.
+
+### Publications
+
+{% cite amiri2023indoor kadambi2022neural ermolov2023neural %}

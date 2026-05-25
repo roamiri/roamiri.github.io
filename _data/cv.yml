@@ -2,96 +2,102 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Roohollah Amiri
+    - name: Location
+      value: San Diego, CA
     - name: Languages
-      value: English, German
-
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+      value: English, Persian
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Senior AI Researcher
+      institution: Qualcomm AI Research, San Diego, CA
+      year: 2024 - Now
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - Research on model quantization and compression for efficient on-device AI inference.
+        - title: Focus areas
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+            - Post-training and quantization-aware training of LLMs and vision models
+            - Mixed-precision quantization for mobile SoC deployment (smartphones, autonomous vehicles)
+            - AI model optimization targeting Qualcomm Snapdragon hardware
+            - Collaboration across research, engineering, and product teams to ship efficient models
+
+    - title: Senior Engineer — Wireless R&D
+      institution: Qualcomm Technologies Inc., San Diego, CA
+      year: 2020 - 2024
       description:
-        - Description 1.
-        - Description 2.
+        - Applied deep learning to 5G/6G positioning, mapping, and network intelligence problems.
+        - title: Projects
+          contents:
+            - Neural RF-SLAM for unsupervised indoor positioning and mapping from 5G channel state information
+            - AI-native 5G indoor localization with IMU supervision (sub-meter accuracy at GLOBECOM 2023)
+            - Digital twin construction and validation on over-the-air testbed — showcased live at MWC 2024
+            - Indoor environment learning via RF-mapping (IEEE JSAC 2023)
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Visiting Research Scholar
+      institution: University of Texas at Austin, Austin, TX
+      year: 2019 - 2020
       description:
+        - Collaboration with Prof. Jeffrey Andrews on large-scale 5G heterogeneous network simulation.
+        - Developed GeoNS, an open-source geometric network simulator using spatial indexing for efficient large-scale wireless network modeling.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD in Electrical and Computer Engineering
+      institution: Boise State University, Boise, ID
+      year: 2016 - 2020
+      description:
+        - Dissertation — Reinforcement Learning in Self-Organizing Cellular Networks
+        - Advisor — Prof. Hani Mehrpouyan
+        - Research on multi-agent RL for power allocation and topology management in heterogeneous and mmWave networks
+
+    - title: M.Sc. in Electrical Engineering
+      institution: Iran University of Science and Technology, Tehran, Iran
+      year: 2014 - 2016
+      description:
+        - Graduate work in signal processing and communications
+
+    - title: B.Sc. in Electrical Engineering
+      institution: Iran
+      year: 2010 - 2014
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/roamiri/GeoNS" target="_blank">GeoNS — Geometric Large-Scale Wireless Network Simulator</a>
+      year: 2020 - Now
+      description: Open-source C++ simulator for large-scale wireless networks using spatial indexing. Enables parallelized experiments, distributed RL, and efficient topology evaluation at realistic 5G network densities.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2020
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Best Student Paper Award nominee — IEEE VTC Fall 2020
+    - year: 2018
       items:
-        - Max Planck Medal
+        - Graduate Research Assistantship — Boise State University ECE Department
+    - year: 2016
+      items:
+        - Dean's Fellowship — Boise State University College of Engineering
 
-- title: Academic Interests
+- title: Research Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Efficient AI
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Model quantization (PTQ and QAT) for LLMs and vision models
+        - Mixed-precision and hardware-aware neural network compression
+        - On-device inference optimization for mobile SoCs
+    - title: AI for Wireless Communications
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Neural RF-SLAM and AI-native indoor positioning
+        - Digital twin construction for 5G/6G networks
+        - Deep learning for channel estimation and network intelligence
+    - title: Reinforcement Learning
+      items:
+        - Multi-agent RL for distributed resource allocation
+        - Self-organizing heterogeneous cellular networks
+        - Power control and topology management in mmWave networks

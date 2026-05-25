@@ -1,80 +1,39 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+title: Reinforcement Learning for Self-Organizing Networks
+description: Multi-agent RL for distributed power control in heterogeneous and mmWave networks
+img: assets/img/8.jpg
+importance: 4
+category: work
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Reinforcement Learning for Self-Organizing Wireless Networks
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+My PhD dissertation — **"Reinforcement Learning in Self-Organizing Cellular Networks"** (Boise State University, 2020) — addressed a fundamental challenge in dense heterogeneous networks: how should thousands of small cells coordinate their behavior without a central controller?
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### Problem
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+5G heterogeneous networks (HetNets) mix macro base stations with dense layers of small cells (picocells, femtocells). Getting these cells to cooperate on power allocation, handover decisions, and activation scheduling — in real time, at scale, with incomplete information — is computationally intractable for centralized approaches.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+### Approach
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+I developed **distributed multi-agent reinforcement learning** algorithms where each cell acts as an autonomous agent learning from local observations:
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- **Q-learning and deep RL** for distributed power control and QoS-aware resource allocation
+- **Self-organizing activation policies** — cells learn when to turn on/off based on local traffic and interference measurements
+- **Clustering-based coordination** — grouping nearby cells to limit the action space while preserving cooperation benefits
 
-{% raw %}
+The algorithms were validated through system-level simulation at realistic network densities using [GeoNS](/projects/1_project/), the spatial network simulator developed in parallel.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+### mmWave Self-Organization
 
-{% endraw %}
+A second research thread applied RL to **mmWave (60 GHz) MIMO systems**, where beam management, small-scale fading, and shadowing create additional complexity:
+
+- Lens-based MIMO architectures for simultaneous fading and shadowing suppression
+- RL-driven beam selection and power allocation under blockage uncertainty
+- Topology management for mmWave backhaul in integrated access-and-backhaul (IAB) networks
+
+### Publications
+
+{% cite amiri2019reinforcement amiri2018machine amiri2018joint almasi2020mmwave amiri2020spatial %}
